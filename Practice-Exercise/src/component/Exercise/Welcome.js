@@ -34,8 +34,8 @@ function Welcome() {
         }
     }, [state])
 
-
-    return (
+    const isAuth = state?.email;
+    return isAuth && (
         <div className="App">
             <h1>Welcome {state?.email}</h1>
             <hr/>
