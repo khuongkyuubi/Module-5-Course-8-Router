@@ -27,12 +27,14 @@ function Router1Login() {
     }, [account]);
 
     const handleLogin = event => {
+        // const error = {};
         event.preventDefault();
         let findAccount = accounts.find(acc => acc.email === account.email && acc.password === account.password)
 
         if (findAccount) {
             navigate("/welcome", {state: {email: findAccount.email}});
         } else {
+            // error["name"] = "Wrong email or password";
             console.log(account);
         }
     }

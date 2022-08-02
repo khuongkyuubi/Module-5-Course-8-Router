@@ -18,6 +18,7 @@ import Router3 from "./component/Practice/Router3-useLocation/Router3";
 import Product3 from "./component/Practice/Router3-useLocation/Product3";
 import Router1Login from "./component/Exercise/Router1Login";
 import Welcome from "./component/Exercise/Welcome";
+import Detail from "./component/Exercise/Detail";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,6 +40,7 @@ root.render(
                     </Route>
                     <Route path={"login"} element={<Router1Login/>}/>
                     <Route path={"welcome"} element={<Welcome/>}/>
+                    <Route path={"employees/detail"} element={<Detail/>}/>
                 </Route>
                 <Route path={"*"} element={<h1>Not found</h1>}/>
             </Routes>
