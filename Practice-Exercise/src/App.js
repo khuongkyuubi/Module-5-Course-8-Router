@@ -22,7 +22,11 @@ function App() {
                         <Link to={"router2"}>Router 2 - useNavigate</Link>
                     </li>
                     <li>
-                        <Link to={"contact"}>Contact</Link>
+                        <Link to={"router3"}>Router 3 - useLocation</Link>
+                    </li>
+                    <h2>Exercise</h2>
+                    <li>
+                        <Link to={"login"}>Login</Link>
                     </li>
                 </ul>
             </nav>
