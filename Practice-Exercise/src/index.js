@@ -8,21 +8,26 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from "./component/Practice/Home";
-import About from "./component/Practice/About";
-import Contact from "./component/Practice/Contact";
-import Router1 from "./component/Practice/Router1";
+import Home from "./component/Practice/Router1/Home";
+import About from "./component/Practice/Router1/About";
+import Contact from "./component/Practice/Router1/Contact";
+import Router1 from "./component/Practice/Router1/Router1";
+import Router2 from "./component/Practice/Router2-useNavigate/Router2";
+import Product from "./component/Practice/Router2-useNavigate/Product";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path={"/"} element={<App />}>
+                <Route path={"/"} element={<App/>}>
                     <Route path="/router1" element={<Router1/>}>
                         <Route path="home" element={<Home/>}/>
                         <Route path="about" element={<About/>}/>
                         <Route path="contact" element={<Contact/>}/>
+                    </Route>
+                    <Route path="router2" element={<Router2/>}>
+                        <Route path="product/:productId" element={<Product/>}/>
                     </Route>
                 </Route>
             </Routes>

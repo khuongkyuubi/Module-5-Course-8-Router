@@ -1,7 +1,7 @@
 import React from "react";
 import {Routes, Route, Link, Outlet} from "react-router-dom";
 import "./App.css";
-import Router1 from "./component/Practice/Router1";
+import Router1 from "./component/Practice/Router1/Router1";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
                         <Link to={"router1"}>Router 1</Link>
                     </li>
                     <li>
-                        <Link to={"about"}>About</Link>
+                        <Link to={"router2"}>Router 2 - useNavigate</Link>
                     </li>
                     <li>
                         <Link to={"contact"}>Contact</Link>
